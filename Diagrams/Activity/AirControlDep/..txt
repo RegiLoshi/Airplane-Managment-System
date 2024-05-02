@@ -1,0 +1,61 @@
+        Access      Delete      Search      Insert
+Arrays- O(1)        O(n)        O(n)        O(n)
+LL-     O(n)        O(n)        O(n)        O(n)
+BST-    O(log n)    O(log n)    O(log n)    O(log n)  -->considering the average case
+
+hash function- mathematical function -> maps key to value
+
+Psh ke array of size 6 dhe do i besh akses me %size
+12%6=0 vendose tek index 0 12 -> problem
+
+*******Exam -> Draw concrete example and ad in the hash map via a certain has function
+            ->Coding problems with already built map .. -> psh improve execution for certain code
+                                                        -> use hash map to solve ...
+
+hashing - process of accessing elements in linear time
+
+Hash map -> nuk ke mubers , ke objects
+           - node with key and entry Node<K,V> + index
+           - U have to map the key based to the index!!!!!!!!!!
+           -Perform bitwise operations on key to go to index if necessary psh
+           merr vtm middle digits of a 7 digit number that will be used as the key to map to index
+
+
+Hashing for encryption:
+
+Collisons- Same key for different values
+     Linear Probing -> find smth free by incrementing positoin by 1
+     Quadratic ->   k+1, k-1,k+2
+     Double hashing-> use another hash function if you did not find free (mabye--)
+
+Chaining -> In each index we have a linked list that will store the index too in itself
+--------------------------------------------------------------
+Arr : 40, 30, 53, 23, 118, 18, 39, 33,79, 200 -> Exam **********
+
+h(x) = x mod b. //Using linear probing
+	0-40 , 1-30, 53-3, 23-4, 118-8, 18-9, 39-2, 33-5, 79-6,200-7
+
+With load factor=0.5 ->If half of the array are occupied you double size and rehash from where the beginning with %2*previous size
+ 	Is this better? Space no , but it is much faster according to accessing elements via speed
+
+Load factor: Threshhold to change array size
+---
+
+Solve with quadratic probing
+	0-40, 1-30, 3-53. 4-23,  8-118, 18-9, 7-39 , 2-33 , 79-6, 200-5
+
+---
+Chaining: At each index you have a linked List. If you have collision you add the node to the LL of that index.
+	LinkedList<Entity<K,V>> arr -> enity = group of keys and values
+	Here you know the raltion between the index and the content via the hash function
+	O(1) to find an element in the list. Deleting is also easy
+
+Q:How about deleting a number in linear probing apporach?
+A: Array e par delete 30. Ok tani delete 200 - > 200%10=0 e zene, Shko tek index 1 -> eshte flagged
+Filled, Empty, Flagged - U have other places ot search
+		Not flagged - U have reached the element that you were searching for		
+		
+	
+
+
+
