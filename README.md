@@ -32,7 +32,7 @@ We chose and built the following design patterns with their class diagrams:
 - **Strategy Pattern** [Link](https://github.com/RegiLoshi/Airplane-Managment-System-Design/blob/master/Diagrams/DesignPatterns/StrategyPattern_a.png)
 
 # Personal Work
-For details on my personal contributions, please refer to this [document!](#) <!-- Add link if available -->
+For details on my personal contributions, please refer to this [document!](https://github.com/RegiLoshi/Airplane-Managment-System-Design/blob/master/Regi-Loshi-Personal-Work-SMD.pdf)
 
 # Full Document
 For the full document containing detailed information and diagrams, please refer to [this link](https://github.com/RegiLoshi/Airplane-Managment-System-Design/blob/master/AIRLINE%20TICKET%20BOOKING%20SOFTWARE%20REQUIREMENTS.pdf).
